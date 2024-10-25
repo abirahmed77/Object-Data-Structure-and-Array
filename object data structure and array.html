@@ -2,38 +2,74 @@
 <html lang="en">
   <head>
     <title>Document</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(hwb(240 40% 0%), rgb(108, 255, 255));
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      h2 {
+        color: rgb(0, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
   </head>
 
   <body>
-    <h2>JavaScript Objects Data Structure and Array</h2>
+    <center>
+      <h2 style="border-style: solid">
+        JavaScript Objects Data Structure and Array
+      </h2>
+      <br />
+    </center>
 
-    <script>
-      var student = {
-        name: "Abir",
-        age: 13,
-        grade: 8,
-        hobbies: "Youtuber",
-        fav_sports: "Football",
-      };
+    <b
+      ><script>
+        var student = {
+          name: "Abir",
+          age: 13,
+          grade: 8,
+          hobbies: "Youtuber",
+          fav_sports: "Football",
+          fav_chocolate: "Snickers",
+          fav_bike: "Kawasaki",
+          fav_car: "Koenigsegg",
+        };
 
-      var color = ["white", "black", "red", "green", "blue"];
+        var color = ["white", "black", "red", "green", "blue"];
 
-      document.write(
-        "Student name is : " + student.name,
-        "<br>",
-        "Student favorite sport is : " + Student.fav_sports
-      );
-      document.write("<br>");
+        document.write(
+          "Student name is : " + student.name,
+          "<br>",
+          "Student age is : " + student.age,
+          "<br>",
+          "Student grade is : " + student.grade,
+          "<br>",
+          "Student hobbies is : " + student.hobbies,
+          "<br>",
+          "Student favorite sport is : " + student.fav_sports,
+          "<br>",
+          "Student favorite bike is : " + student.fav_bike,
+          "<br>",
+          "Student favorite chocolate is : " + student.fav_chocolate,
+          "<br>",
+          "Student favorite car is : " + student.fav_car
+        );
+        document.write("<br>");
 
-      document.write("Before Poping the colors are: " + color.join("^"));
-      document.write("<br>");
+        document.write("Before Poping the colors are: " + color.join("^"));
+        document.write("<br>");
 
-      document.write("My favorite color is : " + color[3]);
-      document.write("<br>");
+        document.write("My favorite color is : " + color[3]);
+        document.write("<br>");
 
-      color.pop();
+        color.pop();
 
-      document.write("After Poping the colors are : " + colors.join("*"));
-    </script>
+        document.write("After Poping the colors are : " + colors.join("*"));
+      </script></b
+    >
   </body>
 </html>
